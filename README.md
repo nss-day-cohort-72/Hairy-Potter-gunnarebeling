@@ -120,12 +120,12 @@ In the `main.js` module, invoke the `PotteryList` component function. Take its r
 > 🧨 Before you click the "Assessment Complete" button on the Learning Platform, add your answers below for each question and make a commit. It is your option to request a face-to-face meeting with a coach for a vocabulary review.
 
 1. Explain how you got the HTML, with the correct data, displayed in the browser?
-   > Your answer here
+   > first I targeted the HTML element by class in my DOM and stored it in a variable with the document.getElementsByClassName() function.Then I set the innerHTML property on said element index of 0 to the String I created and stored in variable potListHTML.
 2. In the **PotteryList** module, when you iterate your pottery, you need to show the evidence of what the **weight** property's value is for the 2nd piece of pottery. Use [Loom](https://www.loom.com/) to record your browser window with the developer tools open and show those values.
-   > Paste your video's public URL here
+   > https://www.loom.com/share/5201d0e2396146c89f28f858a5e3bc25?sid=1f5e9ce5-b911-43ef-a5f3-7236110b8ad4
 3. The **PotteryWheel** module has a single function named `makePottery`. Why doesn't that module have all of the other code in it?
-   > Your answer here
+   > The PotteryWheel module is the initial module that is creating the data object that the rest of the code needs. We dont need anything from the other modules because the other modules purpose or functions are to manipulate and or use the data object being created in the PotteryWheel module.
 4. The pottery shop has learned that there is a set of customers that are willing to buy cracked pottery at a discounted price of $2.50. That means that the cracked pottery should now be displayed in the catalog. Explain the changes that this new business strategy would cause to your algorithm.
-   > Your answer here
+   > In the toSellOrNotToSell() function in the PotteryCatalog.js module I would add an else statement after the initial if statement that would create a new key value pair of price being the key and setting the value of that key to  a  float of 2.50 then I would push that object into the potteryToSell array. that way any of the argument objects passed into the function that have a value of true in the key 'cracked' would be manipulated and handled in said way.
 5. In the **Kiln** module, you have a `firePottery()` function. You need to demonstrate how to use the debugger to verify the values of the parameters for that function when your code runs. Use [Loom](https://www.loom.com/) to record your browser window with the developer tools open and show those values.
-   > Paste your video's public URL here
+   > https://www.loom.com/share/f479fc31bcf448b4b177ae7639d6f2ee?sid=cce4225f-68ea-4183-9c18-ff94c2fe6ddf

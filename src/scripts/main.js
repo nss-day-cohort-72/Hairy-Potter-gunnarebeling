@@ -26,12 +26,17 @@ const finishedPot = toSellOrNotToSell(firedPot);
 const finishedBowl = toSellOrNotToSell(firedBowl);
 const finishedVase = toSellOrNotToSell(firedVase);
 const finishedCup = toSellOrNotToSell(firedCup);
-console.log(usePottery());
+const usedPottery = usePottery();
+usedPottery.forEach(obj => {
+    console.log(obj);
+})
+//console.log(usePottery());
+
 
 
 // Invoke the component function that renders the HTML list
 let potListHTML = potteryList();
 var potListElement = document.getElementsByClassName('potteryList'); 
-potListElement[0].innerHTML = potListHTML
+potListElement[0].innerHTML = potListHTML;
 
 
